@@ -1,8 +1,8 @@
 # SI-Bitacora3-AccesoRemoto
 
-2. Preparación del Entorno
+## 2. Preparación del Entorno
 
-# Tarea 1: Despliegue de la Infraestructura
+## Tarea 1: Despliegue de la Infraestructura
 Crea una carpeta en tu equipo llamada SI_Bitacora4_NombreApellido.
 Guarda el archivo docker-compose.yml dentro de esa carpeta.
 Abre una terminal dentro de esa carpeta y ejecuta: docker-compose up -d
@@ -13,7 +13,7 @@ Verifica que los contenedores están corriendo con docker ps. Deberías ver un s
 
 # 3. Fase de Ejecución: Tareas Evaluables
 
-3.1. SSH: Forjando la Llave Maestra
+## 3.1. SSH: Forjando la Llave Maestra
 
 El acceso por contraseña es cosa del pasado. Un administrador profesional utiliza criptografía de clave pública.
 - Paso A (Conexión Inicial): Conéctate al contenedor usando ssh alumno@localhost -p 2222. La contraseña es sistemas_informaticos.
@@ -30,7 +30,7 @@ Con  ssh-copy-id -p 2222 alumno@localhost me daba error
 <img width="1608" height="161" alt="image" src="https://github.com/user-attachments/assets/fb90f1d8-7097-473e-9fa8-a68ce0a526e5" />
 Lo que hice para solucinarlo fue hacerlo manualmente, pegando el contenido en el contenedor en ~/.ssh/authorized_keys
 
-3.2. RDP: El Escritorio en tu Navegador
+## 3.2. RDP: El Escritorio en tu Navegador
 
 A veces, la consola no es suficiente. Necesitamos el entorno gráfico. Y tenemos una alternativa:
 - Conexión: Abre tu cliente de Escritorio Remoto (MSTSC en Windows o Remmina en Linux) y apunta a localhost:3389.
