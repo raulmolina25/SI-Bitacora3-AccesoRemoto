@@ -38,3 +38,14 @@ SFTP garantiza la seguridad del proceso al ejecutarse sobre un canal cifrado med
 
 ## 3.2. Mensajería y Alertas de Incidencias
 El equipo utilizará Slack como plataforma centralizada para la comunicación técnica y la gestión de operaciones (ChatOps). Configuraremos integraciones nativas y webhooks conectados directamente con nuestro sistema de monitorización. Si el servidor sufre una caída o los servicios críticos dejan de responder, el sistema enviará alertas automáticas e instantáneas a un canal exclusivo denominado #alertas-produccion. Esto garantizará que el equipo de soporte reciba notificaciones en tiempo real, reduciendo al mínimo el tiempo de respuesta ante cualquier fallo en la infraestructura.
+
+# 4. Justificación Científica
+
+El artículo dice que para fundamentar la selección del motor de base de datos de nuestro proyecto, se analizó el estudio empírico desarrollado por Díaz Erazo, el cual evalúa el comportamiento de arquitecturas SQL y NoSQL bajo distintos escenarios de estrés mediante pruebas de benchmarking transaccional. La investigación concluye que, ante incrementos masivos en el número de clientes concurrentes y volumen de operaciones, los gestores NoSQL exhiben una eficiencia superior en tiempos de respuesta y una menor sobrecarga en la entrada/salida de disco y uso de memoria en comparación con los sistemas relacionales tradicionales. Estos hallazgos justifican la integración de una base de datos NoSQL en nuestra aplicación, asegurando un rendimiento predecible y un consumo optimizado de los recursos de hardware en la nube, lo cual impacta positivamente en la contención de los costes mensuales calculados en nuestra estimación de infraestructura.
+
+##Referencias
+
+A. D. Díaz Erazo, M. Raúl Morales Morales, V. K. Pineda Chávez and S. Leonardo Morales Cardoso, "Comparative Analysis of performance for SQL and NoSQL Databases," 2022 17th Iberian Conference on Information Systems and Technologies (CISTI), Madrid, Spain, 2022, pp. 1-14
+
+
+
